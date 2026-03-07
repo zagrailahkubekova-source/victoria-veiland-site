@@ -1,4 +1,4 @@
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
@@ -115,7 +115,14 @@
       border-radius: 999px;
     }
     .brand strong { display: block; font-family: "Playfair Display", serif; font-size: 20px; }
-    .brand span { display: block; font-size: 11px; color: var(--olive); font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+    .brand .mini-text {
+      display: block;
+      font-size: 11px;
+      color: var(--olive);
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
 
     .nav {
       display: flex;
@@ -165,7 +172,14 @@
     }
     .hero-logo .brand-mark { width: 52px; height: 52px; }
     .hero-logo strong { font-family: "Playfair Display", serif; font-size: 32px; display: block; }
-    .hero-logo span { color: var(--olive); text-transform: uppercase; letter-spacing: .22em; font-weight: 800; font-size: 12px; }
+    .hero-logo .mini-text {
+      color: var(--olive);
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      font-weight: 800;
+      font-size: 12px;
+      display: block;
+    }
     .hero-copy p.lead { font-size: 20px; max-width: 760px; }
 
     .hero-visual {
@@ -500,7 +514,7 @@
       .gallery-item:nth-child(6) { min-height: 220px; }
       .footer-wrap { justify-content: center; text-align: center; }
       .brand strong { font-size: 17px; }
-      .brand span { font-size: 10px; }
+      .brand .mini-text { font-size: 10px; }
     }
   </style>
 </head>
@@ -511,7 +525,7 @@
         <span class="brand-mark"></span>
         <span>
           <strong>Aura Beauty</strong>
-          <span>Studio</span>
+          <span class="mini-text">Studio</span>
         </span>
       </a>
       <nav class="nav">
@@ -535,7 +549,7 @@
             <span class="brand-mark"></span>
             <span>
               <strong>Aura Beauty</strong>
-              <span>Beauty Studio</span>
+              <span class="mini-text">Beauty Studio</span>
             </span>
           </div>
           <span class="eyebrow">AURA BEAUTY STUDIO • МОСКВА</span>
@@ -709,7 +723,7 @@
         <span class="brand-mark"></span>
         <span>
           <strong style="font-size:16px;">Aura Beauty</strong>
-          <span>Studio</span>
+          <span class="mini-text">Studio</span>
         </span>
       </a>
       <div style="color:var(--muted)">© Aura Beauty Studio</div>

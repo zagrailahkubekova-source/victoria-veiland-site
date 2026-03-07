@@ -1,33 +1,48 @@
-const reveals = document.querySelectorAll('.reveal');
+const toggleBtn = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.site-nav');
 
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.2 }
-);
+if (toggleBtn && nav) {
+  toggleBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggleBtn.setAttribute('aria-expanded', String(open));
+  });
+}
 
-reveals.forEach(item => observer.observe(item));
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+const lightboxClose = document.querySelector('.lightbox-close');
 
-document.querySelectorAll('.accordion details').forEach(detail => {
-  detail.addEventListener('toggle', () => {
-    if (!detail.open) return;
-    document.querySelectorAll('.accordion details').forEach(other => {
-      if (other !== detail) other.open = false;
+if (lightbox && lightboxImage) {
+  document.querySelectorAll('.gallery-item').forEach((item) => {
+    item.addEventListener('click', () => {
+      const src = item.getAttribute('data-full');
+      lightboxImage.src = src;
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
     });
   });
-});
 
-const bookingForm = document.querySelector('#booking');
-const formMessage = document.querySelector('#formMessage');
+  const closeLightbox = () => {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImage.src = '';
+  };
 
-bookingForm?.addEventListener('submit', event => {
-  event.preventDefault();
-  formMessage.textContent = 'Заявка отправлена. Мы свяжемся с вами в ближайшее время ✨';
-  bookingForm.reset();
-});
+  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+  });
+}
+
+const bookingForm = document.getElementById('bookingForm');
+if (bookingForm) {
+  bookingForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const msg = document.getElementById('formMessage');
+    if (msg) msg.textContent = 'Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.';
+    bookingForm.reset();
+  });
+}

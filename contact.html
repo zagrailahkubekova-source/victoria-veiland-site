@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Контакты и онлайн-запись Aura Beauty Studio." />
+  <title>Aura Beauty Studio — Контакты и запись</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo-link"><img src="images/logo-aura.svg" alt="Aura Beauty Studio" class="logo"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Открыть меню">☰</button>
+      <nav class="site-nav">
+        <a href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html" class="active">Контакты</a>
+      </nav>
+      <a href="#booking" class="btn btn-primary desktop-only">Записаться</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro section-tint">
+      <div class="container">
+        <h1>Контакты и запись</h1>
+        <p>Мы на связи ежедневно и с радостью поможем подобрать услуги под ваш запрос.</p>
+      </div>
+    </section>
+
+    <section class="section container contact-grid">
+      <article class="soft-card">
+        <h2>Контакты</h2>
+        <ul class="contact-list">
+          <li><strong>Телефон:</strong> <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/79000000000">+7 (900) 000-00-00</a></li>
+          <li><strong>Telegram:</strong> <a href="https://t.me/aurabeautystudio">@aurabeautystudio</a></li>
+          <li><strong>Email:</strong> <a href="mailto:hello@aurabeauty.ru">hello@aurabeauty.ru</a></li>
+          <li><strong>Адрес:</strong> Москва, ул. Примерная, 15</li>
+          <li><strong>Время работы:</strong> Пн–Вс, 10:00–21:00</li>
+        </ul>
+      </article>
+
+      <article class="soft-card" id="booking">
+        <h2>Онлайн-запись</h2>
+        <form class="booking-form" id="bookingForm">
+          <label>Имя<input type="text" required></label>
+          <label>Телефон<input type="tel" required></label>
+          <label>Услуга
+            <select required>
+              <option value="">Выберите услугу</option>
+              <option>Маникюр</option>
+              <option>Педикюр</option>
+              <option>Оформление бровей</option>
+              <option>Ламинирование ресниц</option>
+              <option>Макияж</option>
+              <option>Укладка волос</option>
+            </select>
+          </label>
+          <label>Комментарий<textarea rows="3" placeholder="Удобная дата и время"></textarea></label>
+          <button class="btn btn-primary" type="submit">Отправить заявку</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </article>
+    </section>
+
+    <section class="section container">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details><summary>Нужна ли предоплата?</summary><p>Предоплата не обязательна для большинства услуг. Администратор уточнит детали при записи.</p></details>
+        <details><summary>Можно ли перенести запись?</summary><p>Да, пожалуйста, сообщите минимум за 3 часа до визита.</p></details>
+        <details><summary>Как подготовиться к визиту?</summary><p>Достаточно прийти за 5–10 минут до записи, чтобы спокойно расположиться.</p></details>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Карта</h2>
+      <div class="map-placeholder soft-card">Здесь будет интерактивная карта (Москва, ул. Примерная, 15)</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <img src="images/logo-aura.svg" alt="Aura Beauty Studio" class="logo footer-logo">
+      <p>© Aura Beauty Studio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

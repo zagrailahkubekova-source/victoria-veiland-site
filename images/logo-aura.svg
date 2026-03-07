@@ -1,0 +1,7 @@
+<svg width="340" height="92" viewBox="0 0 340 92" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <rect x="2" y="2" width="336" height="88" rx="44" fill="#FCF7F0" stroke="#D8C5AE"/>
+  <circle cx="48" cy="46" r="23" fill="#EED8CF"/>
+  <path d="M48 29C54 38 54 54 48 63C42 54 42 38 48 29Z" fill="#8E9573"/>
+  <text x="84" y="42" fill="#4B3E37" font-size="23" font-family="Georgia, serif">Aura Beauty</text>
+  <text x="84" y="64" fill="#8E9573" font-size="14" font-family="Arial, sans-serif" letter-spacing="2">STUDIO</text>
+</svg>

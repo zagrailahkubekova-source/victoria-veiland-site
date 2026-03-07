@@ -1,243 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Victoria Veiland — люкс салон красоты с премиальным уходом за лицом." />
-  <title>Victoria Veiland — Люкс салон красоты</title>
+  <meta name="description" content="Aura Beauty Studio — пространство красоты, заботы и эстетики." />
+  <title>Aura Beauty Studio — Главная</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header" id="top">
+  <header class="site-header">
     <div class="container nav-wrap">
-      <a href="#top" class="logo">Victoria <span>Veiland</span></a>
-      <nav class="nav">
-        <a href="#about">О салоне</a>
-        <a href="#services">Услуги</a>
-        <a href="#price">Прайс</a>
-        <a href="#gallery">Галерея</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#team">Команда</a>
-        <a href="#contacts">Контакты</a>
+      <a href="index.html" class="logo-link"><img src="images/logo-aura.svg" alt="Aura Beauty Studio" class="logo"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-label="Открыть меню">☰</button>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
       </nav>
+      <a href="contact.html#booking" class="btn btn-primary desktop-only">Записаться</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-glow"></div>
-      <div class="container hero-content reveal">
-        <p class="hero-kicker">Премиальная эстетика & приватность</p>
-        <h1>Victoria Veiland</h1>
-        <p class="hero-subtitle">Люкс салон красоты</p>
-        <p class="hero-description">Изысканные ритуалы ухода за лицом, безупречная стерильность и атмосфера, где каждая деталь создана для вашего восхищения.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#booking">Записаться</a>
-          <a class="btn btn-ghost" href="#price">Прайс</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="about">
-      <div class="container">
-        <h2>О салоне</h2>
-        <p class="section-lead">Мы создали камерное пространство luxury-уровня, где красота сочетается с медицинской чистотой и глубоким расслаблением.</p>
-        <div class="grid four">
-          <article class="glass-card">
-            <h3>Люкс-атмосфера</h3>
-            <p>Тонкий аромат, мягкий свет и премиальные материалы интерьера создают эффект полного перезапуска.</p>
-          </article>
-          <article class="glass-card">
-            <h3>Стерильность</h3>
-            <p>Инструменты проходят многоступенчатую обработку, а протоколы гигиены контролируются ежедневно.</p>
-          </article>
-          <article class="glass-card">
-            <h3>Премиум-уход</h3>
-            <p>Только профессиональная косметика и персональные программы с учетом состояния кожи.</p>
-          </article>
-          <article class="glass-card">
-            <h3>Приватность</h3>
-            <p>Индивидуальные кабинеты и деликатный сервис для тех, кто ценит комфорт и тишину.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="services">
-      <div class="container">
-        <h2>Уход за лицом</h2>
-        <p class="section-lead">Каждая процедура построена как эстетический ритуал из нескольких этапов.</p>
-        <div class="timeline">
-          <article class="glass-card stage">
-            <span>01</span><h3>Подготовительный этап</h3><p>Демакияж, распаривание, скрабирование и мягкое очищение под тип кожи.</p>
-          </article>
-          <article class="glass-card stage">
-            <span>02</span><h3>Чистка</h3><p>Гигиеническая или механическая чистка с максимальным комфортом.</p>
-          </article>
-          <article class="glass-card stage">
-            <span>03</span><h3>Основной уход</h3><p>Подбор маски: антивозрастной, увлажняющей, витаминной или лифтинг.</p>
-          </article>
-          <article class="glass-card stage">
-            <span>04</span><h3>Массаж лица</h3><p>Техники для тонуса, скульптурирования и выраженного сияния кожи.</p>
-          </article>
-          <article class="glass-card stage">
-            <span>05</span><h3>Завершение</h3><p>Сыворотка или крем для закрепления результата и защиты кожи.</p>
-          </article>
-        </div>
-        <div class="cta-inline">
-          <p>Хотите персональный протокол ухода?</p>
-          <a class="btn btn-primary" href="#booking">Подобрать программу</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="price">
-      <div class="container">
-        <h2>Прайс</h2>
-        <div class="accordion">
-          <details open>
-            <summary>Подготовительный этап</summary>
-            <ul>
-              <li><span>Демакияж</span><b>500 ₽</b></li>
-              <li><span>Распаривание</span><b>600 ₽</b></li>
-              <li><span>Скрабирование</span><b>550 ₽</b></li>
-              <li><span>Пилинг/очищение</span><b>900 ₽</b></li>
-            </ul>
-          </details>
-          <details>
-            <summary>Чистка</summary>
-            <ul>
-              <li><span>Гигиеническая чистка</span><b>1400 ₽</b></li>
-              <li><span>Механическая чистка</span><b>1900 ₽</b></li>
-            </ul>
-          </details>
-          <details>
-            <summary>Основной уход</summary>
-            <ul>
-              <li><span>Маска распаривающая</span><b>800 ₽</b></li>
-              <li><span>Маска (антивозрастная)</span><b>1500 ₽</b></li>
-              <li><span>Маска (увлажняющая)</span><b>1200 ₽</b></li>
-              <li><span>Маска (для упругости/подтягивающая)</span><b>1400 ₽</b></li>
-              <li><span>Маска (витаминная/питательная)</span><b>1300 ₽</b></li>
-            </ul>
-          </details>
-          <details>
-            <summary>Массаж лица</summary>
-            <ul>
-              <li><span>Классический</span><b>1600 ₽</b></li>
-              <li><span>Скульптурирующий</span><b>1900 ₽</b></li>
-              <li><span>Лимфодренажный</span><b>1700 ₽</b></li>
-              <li><span>Против второго подбородка</span><b>1800 ₽</b></li>
-              <li><span>Медовый</span><b>2000 ₽</b></li>
-            </ul>
-          </details>
-          <details>
-            <summary>Завершающий этап</summary>
-            <ul>
-              <li><span>Нанесение сыворотки или крема</span><b>500 ₽</b></li>
-            </ul>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="gallery">
-      <div class="container">
-        <h2>Галерея процедур</h2>
-        <div class="gallery-grid">
-          <figure class="photo-card"><img src="images/service-01.jpg" alt="Деликатный демакияж"><figcaption>Деликатный демакияж <span>Victoria Veiland</span></figcaption></figure>
-          <figure class="photo-card"><img src="images/service-02.jpg" alt="Распаривание"><figcaption>Распаривание <span>Victoria Veiland</span></figcaption></figure>
-          <figure class="photo-card"><img src="images/service-03.jpg" alt="Скрабирование"><figcaption>Скрабирование <span>Victoria Veiland</span></figcaption></figure>
-          <figure class="photo-card"><img src="images/service-04.jpg" alt="Пилинг"><figcaption>Пилинг и очищение <span>Victoria Veiland</span></figcaption></figure>
-          <figure class="photo-card"><img src="images/service-05.jpg" alt="Чистка кожи"><figcaption>Гигиеническая чистка <span>Victoria Veiland</span></figcaption></figure>
-          <figure class="photo-card"><img src="images/service-06.jpg" alt="Антивозрастная маска"><figcaption>Антивозрастная маска <span>Victoria Veiland</span></figcaption></figure>
-          <figure class="photo-card"><img src="images/service-07.jpg" alt="Увлажняющая маска"><figcaption>Увлажняющая маска <span>Victoria Veiland</span></figcaption></figure>
-          <figure class="photo-card"><img src="images/service-08.jpg" alt="Скульптурный массаж"><figcaption>Скульптурный массаж <span>Victoria Veiland</span></figcaption></figure>
-          <figure class="photo-card"><img src="images/service-09.jpg" alt="Лимфодренаж"><figcaption>Лимфодренаж <span>Victoria Veiland</span></figcaption></figure>
-          <figure class="photo-card"><img src="images/service-10.jpg" alt="Финальное нанесение крема"><figcaption>Финальное сияние <span>Victoria Veiland</span></figcaption></figure>
-        </div>
-        <div class="cta-inline">
-          <p>Больше работ покажем при личной консультации.</p>
-          <a class="btn btn-ghost" href="#contacts">Связаться с администратором</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="reviews">
-      <div class="container">
-        <h2>Отзывы клиентов</h2>
-        <div class="grid three">
-          <article class="glass-card review"><p>«После первой процедуры кожа выглядит так, будто я вернулась из отпуска. Сервис — безупречный.»</p><strong>Анна К.</strong><span>★★★★★ 5.0</span></article>
-          <article class="glass-card review"><p>«Очень деликатная чистка и потрясающий массаж. Люблю за тишину и приватность.»</p><strong>Елена М.</strong><span>★★★★★ 5.0</span></article>
-          <article class="glass-card review"><p>«Идеально подобрали уход: ушла сухость, тон стал ровнее. Это настоящий luxury-уход.»</p><strong>София Л.</strong><span>★★★★★ 5.0</span></article>
-          <article class="glass-card review"><p>«Невероятная атмосфера и профессиональные мастера. Всегда чувствую себя особенной.»</p><strong>Марина Т.</strong><span>★★★★★ 5.0</span></article>
-          <article class="glass-card review"><p>«Результат держится долго, лицо заметно подтянулось. Записываюсь только сюда.»</p><strong>Ольга В.</strong><span>★★★★★ 5.0</span></article>
-          <article class="glass-card review"><p>«Каждый визит — как ритуал красоты. Спасибо за качество и внимание к деталям.»</p><strong>Кристина Р.</strong><span>★★★★★ 5.0</span></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="team">
-      <div class="container">
-        <h2>Команда Victoria Veiland</h2>
-        <div class="grid four team-grid">
-          <article class="glass-card specialist"><img src="images/team-01.jpg" alt="Косметолог Виктория"><h3>Виктория Вейланд</h3><p>Главный эстетист</p></article>
-          <article class="glass-card specialist"><img src="images/team-02.jpg" alt="Специалист Мария"><h3>Мария Орлова</h3><p>Косметолог-эстетист</p></article>
-          <article class="glass-card specialist"><img src="images/team-03.jpg" alt="Специалист Алина"><h3>Алина Нестерова</h3><p>Массажист лица</p></article>
-          <article class="glass-card specialist"><img src="images/team-04.jpg" alt="Специалист Дарья"><h3>Дарья Лукьянова</h3><p>Эксперт по уходу</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reveal" id="contacts">
-      <div class="container two-col">
+      <div class="container hero-grid">
         <div>
-          <h2>Контакты</h2>
-          <p class="section-lead">Салон открыт ежедневно по предварительной записи.</p>
-          <ul class="contact-list">
-            <li><strong>Телефон:</strong> <a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
-            <li><strong>Адрес:</strong> Москва, Пречистенская набережная, 12</li>
-            <li><strong>Часы:</strong> 10:00 — 22:00</li>
-          </ul>
+          <p class="eyebrow">Aura Beauty Studio</p>
+          <h1>Aura Beauty Studio — пространство красоты, заботы и эстетики</h1>
+          <p>Современная студия красоты, где каждая деталь создана для вашего комфорта, уверенности и расслабления.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/79991234567" target="_blank" rel="noopener">WhatsApp</a>
-            <a class="btn btn-ghost" href="https://t.me/victoriaveiland" target="_blank" rel="noopener">Telegram</a>
+            <a class="btn btn-primary" href="contact.html#booking">Записаться онлайн</a>
+            <a class="btn btn-secondary" href="services.html">Смотреть услуги</a>
           </div>
         </div>
-        <form class="glass-card booking-form" id="booking">
-          <h3>Онлайн-запись</h3>
-          <label>Имя<input type="text" name="name" required></label>
-          <label>Телефон<input type="tel" name="phone" required></label>
-          <label>Услуга
-            <select name="service" required>
-              <option value="">Выберите услугу</option>
-              <option>Комплексный уход за лицом</option>
-              <option>Чистка лица</option>
-              <option>Массаж лица</option>
-              <option>Индивидуальная программа</option>
-            </select>
-          </label>
-          <div class="form-row">
-            <label>Дата<input type="date" name="date" required></label>
-            <label>Время<input type="time" name="time" required></label>
-          </div>
-          <label>Комментарий<textarea name="comment" rows="3" placeholder="Пожелания к процедуре"></textarea></label>
-          <button type="submit" class="btn btn-primary">Отправить заявку</button>
-          <p class="success-message" id="formMessage" aria-live="polite"></p>
-        </form>
+        <div class="hero-card soft-card">
+          <h2>Мягкая эстетика каждый день</h2>
+          <p>Aura Beauty Studio — это место, где красота раскрывается мягко и естественно. Мы создаем спокойную, уютную атмосферу, в которой каждая клиентка чувствует заботу, комфорт и уверенность.</p>
+        </div>
       </div>
+    </section>
+
+    <section class="section container">
+      <h2>Почему выбирают нас</h2>
+      <div class="grid cols-3">
+        <article class="soft-card">Индивидуальный подход</article>
+        <article class="soft-card">Опытные мастера</article>
+        <article class="soft-card">Качественные материалы</article>
+        <article class="soft-card">Чистота и комфорт</article>
+        <article class="soft-card">Современные техники</article>
+        <article class="soft-card">Удобная запись</article>
+      </div>
+    </section>
+
+    <section class="section section-tint">
+      <div class="container">
+        <h2>Популярные услуги</h2>
+        <div class="price-list">
+          <div><span>Маникюр</span><b>от 1 800 ₽</b></div>
+          <div><span>Педикюр</span><b>от 2 200 ₽</b></div>
+          <div><span>Оформление бровей</span><b>от 900 ₽</b></div>
+          <div><span>Ламинирование ресниц</span><b>от 1 900 ₽</b></div>
+          <div><span>Макияж</span><b>от 2 500 ₽</b></div>
+          <div><span>Укладка волос</span><b>от 2 000 ₽</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="gallery">
+      <div class="section-head">
+        <h2>Галерея студии</h2>
+        <p>Нажмите на фото, чтобы открыть в полном размере.</p>
+      </div>
+      <div class="gallery-grid">
+        <button class="gallery-item" data-full="images/gallery-1.svg"><img src="images/gallery-1.svg" alt="Интерьер студии Aura"></button>
+        <button class="gallery-item" data-full="images/gallery-2.svg"><img src="images/gallery-2.svg" alt="Маникюр в нежных оттенках"></button>
+        <button class="gallery-item" data-full="images/gallery-3.svg"><img src="images/gallery-3.svg" alt="Оформление бровей"></button>
+        <button class="gallery-item" data-full="images/gallery-4.svg"><img src="images/gallery-4.svg" alt="Укладка волос"></button>
+        <button class="gallery-item" data-full="images/gallery-5.svg"><img src="images/gallery-5.svg" alt="Макияж"></button>
+        <button class="gallery-item" data-full="images/gallery-6.svg"><img src="images/gallery-6.svg" alt="Уход за лицом"></button>
+      </div>
+    </section>
+
+    <section class="section section-tint">
+      <div class="container">
+        <h2>Отзывы</h2>
+        <div class="grid cols-3">
+          <article class="soft-card quote"><p>«Очень красивый и уютный салон. Всё аккуратно, спокойно и с вниманием к деталям.»</p><strong>Анна</strong></article>
+          <article class="soft-card quote"><p>«Понравилась атмосфера и результат. Делала брови и укладку — всё выглядело очень красиво.»</p><strong>Марина</strong></article>
+          <article class="soft-card quote"><p>«Приятное место, где можно расслабиться и довериться мастерам. Хочется вернуться снова.»</p><strong>Елена</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container final-cta">
+      <h2>Готовы уделить время себе?</h2>
+      <p>Запишитесь на удобное время — мы подберем услуги под ваш образ и настроение.</p>
+      <a class="btn btn-primary" href="contact.html#booking">Записаться в Aura Beauty Studio</a>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© Victoria Veiland, 2026. Luxury beauty destination.</p>
-      <p class="howto"><strong>Как открыть:</strong> скачайте проект и откройте <code>index.html</code> в браузере. <strong>GitHub Pages:</strong> загрузите файлы в репозиторий → Settings → Pages → Deploy from branch (main/root).</p>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <img src="images/logo-aura.svg" alt="Aura Beauty Studio" class="logo footer-logo">
+      <p>© Aura Beauty Studio</p>
+      <div class="footer-links">
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+      </div>
     </div>
   </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Закрыть">×</button>
+    <img src="" alt="Увеличенное фото" id="lightboxImage">
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
